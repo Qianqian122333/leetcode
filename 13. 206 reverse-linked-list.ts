@@ -1,23 +1,23 @@
-class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(val?: number, next?: ListNode | null) {
-    this.val = val === undefined ? 0 : val;
-    this.next = next === undefined ? null : next;
-  }
-}
+// class ListNode {
+//   val: number;
+//   next: ListNode | null;
+//   constructor(val?: number, next?: ListNode | null) {
+//     this.val = val === undefined ? 0 : val;
+//     this.next = next === undefined ? null : next;
+//   }
+// }
 
-function reverseList(head: ListNode | null): ListNode | null {
-  let prev = null;
-  let cur = head;
-  while (cur !== null) {
-    let nextTemp = cur.next;
-    cur.next = prev;
-    prev = cur;
-    cur = nextTemp;
-  }
-  return prev;
-}
+// function reverseList(head: ListNode | null): ListNode | null {
+//   let prev = null;
+//   let cur = head;
+//   while (cur !== null) {
+//     let nextTemp = cur.next;
+//     cur.next = prev;
+//     prev = cur;
+//     cur = nextTemp;
+//   }
+//   return prev;
+// }
 
 // 反转链表 (LeetCode 206)
 // * --- 解题思路：迭代法 ---
